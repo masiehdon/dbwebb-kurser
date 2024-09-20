@@ -26,6 +26,8 @@
         <div class="main-content">
             <p>
                 Detta projekt dokumenterar min PHP resa, mina utmaningar och mina uppgifter.
+                <br><br>
+                Repot hittas på Github: <a href="https://github.com/masiehdon/dbwebb-kurser" target="_blank">https://github.com/masiehdon/dbwebb-kurser </a>
             </p>
         </div>
         </main>
