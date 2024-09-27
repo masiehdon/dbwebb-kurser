@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/footer.css">
+
     <title>Index</title>
 </head>
 
@@ -32,17 +34,16 @@
         </div>
         </main>
 
-
+</div>
         
         <footer>
-
             <div class="footer">
                 <?php
                 include("../view/footer.php");
                 ?>
             </div>
         </footer>
-    </div>
+    
 </body>
 
 </html>

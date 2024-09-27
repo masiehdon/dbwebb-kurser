@@ -21,7 +21,7 @@
 
         <main class="main">
         <div class="me">
-            <h1>About</h1>
+            <h1>About this course</h1>
         </div>
         <div class="main-content">
             <p>

@@ -1,10 +1,17 @@
-/* styles.css */
+html, body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-width: 100%;
+}
 
 .container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  margin: 0 15px;
+  margin: 0 ;
   padding: 0;
   width: 100vw;
 }
@@ -18,49 +25,74 @@
   justify-content: center;
   align-items: center;
 }
-.navbar {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: darkgrey;
-  
-}
 
-.navbar ul {
-  display: flex;
-  flex-direction: row;
-  padding: 0;
-  margin: 0;
-}
 
-.navbar ul li {
-  flex-direction: column;
-  padding: 10px;
-  list-style-type: none;
- 
-}
-a {
-  text-decoration: none;
-}
-a:hover {
-  background-color: #e7dfaa;
-}
 .me {
+  display: block;
   text-align: center;
+  justify-content: center;
 }
 
 .main-content {
   display: flex;
   margin: auto;
   justify-content: center;
-  text-align: center;
+  gap: 25px;
+
 }
 
 .main-content-report {
- 
-  margin: auto;
-  justify-content: center;
-  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+
 }
+
+.header-report {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.aside {
+  grid-column: 1;
+  grid-row: 2 / 4;
+  margin-left: 0;
+  justify-content: flex-start;
+  background-color: rgb(108, 105, 105);
+
+}
+
+.aside ul {
+  list-style: none;
+  color: black;
+
+}
+
+.aside ul li {
+  margin-top: 25px;
+}
+
+.article {
+  grid-column: 2 / 4;
+  grid-row: 2;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  margin-left: 25px;
+  max-width: 80%;
+
+}
+
+
+
 .title {
   display: block;
   text-align: center;
@@ -70,20 +102,17 @@ a:hover {
   display: block;
   text-align: left;
   white-space: pre-wrap;
-  overflow-y: auto; 
+  overflow-y: auto;
   margin: 15px;
 }
+
 .main-content img {
   width: 300px;
   height: auto;
 }
 
-footer {
-  position: absolute;
+.footer {
+  min-width: 100vw;
   bottom: 0;
-  width: 100%;
-  height: 50px; /* adjust the height as needed */
-  background-color: #f2f2f2; 
-  justify-content: center;
-
+  max-height: 150px;
 }

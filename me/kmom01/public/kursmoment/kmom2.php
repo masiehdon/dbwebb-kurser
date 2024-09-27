@@ -24,14 +24,9 @@
        <main class="main">
        <div class="main-content-report">
            
-       <?php
-                $jsonData = file_get_contents('./reports/kmom1.json');
-                
-                $report = json_decode($jsonData, true);
-
-                echo "<h1>" . $report['title'] . "</h1>";
-                echo "<p>" . $report['report'] . "</p>";
-                ?>
+      <p>
+        Tobe continued!
+      </p>
        </div>
      </div>
        <footer>

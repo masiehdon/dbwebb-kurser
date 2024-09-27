@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/report.css">
     <title>Document</title>
 </head>
 
@@ -21,15 +22,26 @@
 
         </nav>
 
-        <main class="main">
-            <div class="me">
-                <h1>Reports</h1>
+        <main class="main-report">
+            <div class="header-report">
+                <h1>Rapport</h1>
             </div>
-            <div class="main-content">
-                <ul>
-                    <li><a href="./kursmoment/kmom1.php">Kursmoment 1</a></li>
+            <div class="main-content-report">
 
-                </ul>
+                <aside class="aside">
+                    <ul>
+                        <li><a href="./kursmoment/kmom1.php">Kursmoment 1</a></li>
+                        <li><a href="./kursmoment/kmom2.php">Kursmoment 2</a></li>
+
+
+                    </ul>
+                </aside>
+                <article class="article">
+                    <p>
+                        På denn asida kan du navigera mellan rapporter till de olika obligatoriska kursmomenter.<br>
+                        Länken till respektive rapport finns i rutan till vänster.
+                    </p>
+                </article>
 
             </div>
         </main>

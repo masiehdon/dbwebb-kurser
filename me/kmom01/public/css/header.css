@@ -1,0 +1,50 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  width: 100%;
+}
+
+
+.bg-image {
+  background-image: url("../img/navbar-bg.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100px;
+  min-width: 100vw;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: darkgrey;
+    min-height: 25px;
+    min-width: 100%;
+    
+  }
+
+  .navbar ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+   
+  }
+  
+  .navbar ul li {
+    flex-direction: column;
+    padding: 10px;
+    list-style-type: none;
+ 
+  }
+  a {
+    text-decoration: none;
+    text-transform: uppercase; 
+    color: #000
+  }
+  a:hover {
+    background-color: #e7dfaa;
+  }
