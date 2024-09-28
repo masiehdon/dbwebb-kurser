@@ -7,3 +7,28 @@
     margin-left: 20px;
     height: 100%;
 }
+
+.aside {
+    grid-column: 1;
+    grid-row: 2 / 4;
+    margin-left: 0;
+    justify-content: flex-start;
+ 
+  
+  }
+  
+  .aside ul {
+    list-style-type: none;
+    padding-left: 10px;
+  }
+
+  
+.aside ul {
+  list-style: none;
+  color: black;
+
+}
+
+.aside ul li {
+  margin-top: 25px;
+}

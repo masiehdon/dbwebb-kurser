@@ -26,11 +26,14 @@
         <main class="main">
         <div class="me">
             <h1>My PHP journey</h1>
+            <div class="p">
             <p>PHP is my favorite language. I love it! <br>
-        Jag erkänner att jag inte har börjat älska PHP än men det är aldrig för sent. Jag vill lära mig PHP och databaser vilket kommer ge mig möjlighten till att dyka djupare i programmerings-världen!</p>
+        Jag erkänner att jag inte har börjat älska PHP än men det är aldrig för sent. Jag vill lära mig PHP och databaser vilket kommer ge mig möjlighten till att dyka djupare i programmerings-världen!</p>    
+            </div>
+            
         </div>
-        <div class="main-content">
-            <img src="img/hacker.webp" alt="me">
+        <div class="main-content bg">
+            
         </div>
         </main>
 
