@@ -19,11 +19,15 @@
 
         </div>
         <nav class="navbar">
+           
             <ul>
-            <li><a href="index.php">Home</a></li>
-        <li><a href="report.php">Reports</a></li>
-        <li><a href="about.php">About</a></li>
-         </ul>
+           
+                <li><a href="/dbwebb-kurser/me/kmom01/public/index.php">Home</a></li>
+                <li><a href="/dbwebb-kurser/me/kmom01/public/about.php">About</a></li>
+                <li><a href="/dbwebb-kurser/me/kmom01/public/report.php">Reports</a></li>
+    
+    </ul>
+         
        
         </nav>
      

@@ -5,20 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+
 
     <title>Document</title>
 </head>
 <body>
     <div class="container">
     <nav>
-           
-           <div class="navbar">
-               <?php
+    <div class="navbar">
+    <?php
                $title = "header";
-               include("../../view/header.php");
+               include"../../view/header.php";
                ?>
-           </div>
 
+           </div>
        </nav>
 
        <main class="main">
@@ -34,11 +35,13 @@
                 ?>
        </div>
      </div>
+ 
        <footer>
 
             <div class="footer">
                 <?php
-                include("../../view/footer.php");
+                $title = "footer";
+                include $_SERVER['DOCUMENT_ROOT'] . '/me/kmom01/view/footer.php';
                 ?>
             </div>
         </footer>
