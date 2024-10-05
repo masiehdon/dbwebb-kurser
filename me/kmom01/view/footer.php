@@ -17,7 +17,7 @@
    <div class="footer-wrapper" >
 
         <div class="col1 col">
-            <h5>Online Resources</h5>
+            <p>Online Resources</p>
             <ul>
                 <li><a href="https://developer.mozilla.org/en-US/" target="_blank" title">
                         </title>MDN</a></li>
@@ -26,14 +26,14 @@
             </div>
 
             <div class="col2 col">
-                <h5>Test your website</h5>
+                <p>Test your website</p>
                 <ul>
                     <li><a href="https://gtmetrix.com/" target="_blank">GTmetrix</a></li>
                 </ul>
             </div>
 
             <div class="col3 col">
-                <h5>Fun facts</h5>
+                <p>Fun facts</p>
             </div>
 
             <div class="copyright col">

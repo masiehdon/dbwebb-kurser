@@ -22,7 +22,7 @@
        </nav>
 
        <main class="main">
-       <div class="main-content-report">
+       <div class="main-content-report-kmom">
            
        <?php
                 $jsonData = file_get_contents('./reports/kmom1.json');

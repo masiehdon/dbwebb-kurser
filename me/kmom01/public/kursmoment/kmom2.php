@@ -22,11 +22,16 @@
        </nav>
 
        <main class="main">
-       <div class="main-content-report">
+       <div class="main-content-report-kmom">
            
-      <p>
-        Tobe continued!
-      </p>
+       <?php
+                $jsonData = file_get_contents('./reports/kmom2.json');
+                
+                $report = json_decode($jsonData, true);
+
+                echo "<h1>" . $report['title'] . "</h1>";
+                echo "<p>" . $report['report'] . "</p>";
+                ?>
        </div>
      </div>
        <footer>
