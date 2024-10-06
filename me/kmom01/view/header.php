@@ -4,8 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Navbar</title>
+    <?php include '../config/config.php'; ?>
+
+<link rel="stylesheet" href="<?= $baseUrl ?>css/style.css">
+
+<title>Navbar</title>
 </head>
 
 <body>
@@ -14,10 +17,10 @@
     ?>
     <header>
         <nav class="navbar">
-            <ul>
-            <li><a href="index.php">Home</a></li>
-        <li><a href="report.php">Reports</a></li>
-        <li><a href="about.php">About</a></li>
+        <ul>
+                <li><a href="<?= $baseUrl ?>/index.php">Home</a></li>
+                <li><a href="<?= $baseUrl ?>/about.php">About</a></li>
+                <li><a href="<?= $baseUrl ?>/report.php">Reports</a></li>
             </ul>
         </nav>
     </header>
