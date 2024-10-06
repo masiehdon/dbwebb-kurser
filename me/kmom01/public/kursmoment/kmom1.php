@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/footer.css">
+
+    <?php include "../../config/config.php" ?>
+
+<link rel="stylesheet" href="<?= $baseUrl ?>css/style.css">
+<link rel="stylesheet" href="<?= $baseUrl ?>css/header.css">
+<link rel="stylesheet" href="<?= $baseUrl ?>css/footer.css">
 
 
     <title>Document</title>
@@ -39,9 +42,8 @@
        <footer>
 
             <div class="footer">
-                <?php
-                $title = "footer";
-                include $_SERVER['DOCUMENT_ROOT'] . '/me/kmom01/view/footer.php';
+            <?php
+                include"../../view/footer.php";
                 ?>
             </div>
         </footer>
