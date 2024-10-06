@@ -9,6 +9,5 @@ if ($_SERVER['HTTP_HOST'] == 'localhost') {
 
     $rootDir = __DIR__ . '/../';
 
-    // Debugging to check the value of $rootDir
-echo "Root Directory: " . $rootDir;
+   
 }
