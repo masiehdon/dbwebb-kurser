@@ -265,3 +265,10 @@ footer {
 
 }
  }
+
+
+ .date {
+   font-size: 1.2em;
+   text-align: center;
+   border: 2px solid black;
+ }

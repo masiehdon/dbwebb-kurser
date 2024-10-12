@@ -23,10 +23,11 @@
         </div>
         <nav class="navbar">
             <ul>
-                <li><a href="<?= $baseUrl ?>/index.php">Home</a></li>
+                <li><a href="<?= $baseUrl ?>/me.php">Home</a></li>
                 <li><a href="<?= $baseUrl ?>/about.php">About</a></li>
-                <li><a href="<?= $baseUrl ?>/report.php">Reports</a></li>
-            </ul>
+                <li><a href="<?= $baseUrl ?>/report.php">Reports</a></li>                
+                <li><a href="<?= $baseUrl ?>/friday.php">Friday?</a></li>
+                </ul>
         </nav>
        
     </header>

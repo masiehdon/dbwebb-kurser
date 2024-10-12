@@ -15,7 +15,7 @@
 <body>
     <div class="container">
         <nav>
-           
+          
             <div class="navbar">
                 <?php
                 $title = "Index";
