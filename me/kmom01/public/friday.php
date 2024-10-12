@@ -14,9 +14,9 @@
 </head>
 
 <body>
-<div class="container">
+    <div class="container">
         <nav>
-           
+
             <div class="navbar">
                 <?php
                 $title = "Index";
@@ -26,49 +26,53 @@
 
         </nav>
 
- <div class="output">
+        <div class="output">
 
-<?php
+            <?php
 
-if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['date']))  {
+            if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['date'])) {
 
-    $selectedDate = $_POST['date'];
-    $divClass = "default";
+                $selectedDate = $_POST['date'];
+                $targetDay = 'Friday';
+                $date = new DateTime($selectedDate);
+                $dayOfWeek = date('l', strtotime($selectedDate));
+                $daysUntilTarget = (7 - $date->format('w') + date('w', strtotime($targetDay))) % 7;
+                $divClass = "default";
 
-if(empty($selectedDate)){
-    $divClass = "default";
-    echo "Please select a date!";
-} else {
-    $dayOfWeek = date('l', strtotime($selectedDate));
-    if ($dayOfWeek == "Friday") {
-        $divClass = "friday";
-        echo "YEEEEHHHHHHHHH " . $selectedDate . " is a Friday!";
-    } elseif ($dayOfWeek !== "Friday") {
-        $divClass = "default";
+                if (empty($selectedDate)) {
+                    $divClass = "default";
+                    echo "Please select a date!";
+                } else {
 
-        echo $selectedDate . " is NOT a Friday!";
-    }
-}
-}
+                    if ($dayOfWeek == "Friday") {
+                        $divClass = "friday";
+                        echo "YEEEEHHHHHHHHH " . $selectedDate . " is a Friday!";
+                    } elseif ($dayOfWeek !== "Friday") {
+                        $divClass = "default";
+                        echo $daysUntilTarget > 1 ? $selectedDate . " is NOT a Friday! But Only " . $daysUntilTarget . " days until next Friday!" : "Only " . $daysUntilTarget . " day until next Friday!";
 
-?>
-</div>
-    <div class=<?= $divClass ?> default>
-        <div class="which-day">
-            <h1>Which day?</h1>
+                    }
+                }
+            }
+
+            ?>
         </div>
-        <br><br>
-        <form action="friday.php" method="post">
-    <label for="date">Select a date:</label>
-    <input type="date" id="date" name="date">
-    <input type="submit" value="Submit" class="button">
-</form>
+        <div class=<?= $divClass ?> default>
+            <div class="which-day">
+                <h1>Which day?</h1>
+            </div>
+            <br><br>
+            <form action="friday.php" method="post">
+                <label for="date">Select a date:</label>
+                <input type="date" id="date" name="date">
+                <input type="submit" value="Submit" class="button">
+            </form>
+
+        </div>
+
+
 
     </div>
-   
-    
-
-</div>
 </body>
 
 </html>
