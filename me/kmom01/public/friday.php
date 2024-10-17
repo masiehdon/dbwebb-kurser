@@ -73,6 +73,13 @@
 
 
     </div>
+    <footer>
+            <div class="footer">
+                <?php
+                include("../view/footer.php");
+                ?>
+            </div>
+        </footer>
 </body>
 
 </html>
