@@ -27,7 +27,7 @@
                 <li><a href="<?= $baseUrl ?>about.php">About</a></li>
                 <li><a href="<?= $baseUrl ?>report.php">Reports</a></li>
                 <li><a href="<?= $baseUrl ?>friday.php">Friday</a></li>
-                <li><a href="<?= $baseUrl ?>today.php">Month</a></li>
+                <li><a href="<?= $baseUrl ?>month.php">Month</a></li>
 
 
             </ul>
