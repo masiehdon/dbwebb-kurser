@@ -1,0 +1,57 @@
+# dbwebb config files
+- /.dbwebb.exclude
+- /.dbwebb.include
+- /.dbwebb.tests
+- /.dbwebb.version
+/.dbwebb/*
+/.dbwebb*
+
+# Validator config files
+/.*rc
+/.*.xml
+/.*.conf
+/.*.json
+
+.env.student.local
+- .env*.local
+
+- *:Zone.Identifier
+- .vscode
+
+/example/
+- /example/vendor
+- /example/**/vendor
+- /example/**/node_modules/*
+/example/**
+
+/me/
+- /me/**/.bin
+- /me/**/build
+- /me/**/cache/cimage/*
+
+# Laravel cache files
+- /me/**/bootstrap/cache/*.php
+- /me/**/storage/app/**/*.php
+- /me/**/storage/framework/**/*.php
+- /me/**/storage/framework/sessions/*
+- /me/**/storage/logs/**
+
+# Symfony cache files
+- /me/**/var/cache/**
+- /me/**/var/log/**
+
+# Yii cache files
+- /me/**/web/assets/*
+- /me/**/runtime/*
+
+- vendor/mos/cimage/webroot
+#- vendor/**/config
+- vendor/**/docs
+- vendor/**/test
+- node_modules/
+- gulpfile.js
+
+/me/**
+
+- */
+- *
