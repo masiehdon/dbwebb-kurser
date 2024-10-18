@@ -31,7 +31,7 @@
     $year = date("Y");
     $month_name = date('F', mktime(0, 0, 0, $month, 1));
     $day = date("d");
-
+$currentTime = date("h:i:sa");
 
     if (isset($_GET['month']) && isset($_GET['year'])) {
       $month = $_GET['month'];
@@ -46,12 +46,11 @@
     <div class="month">
       <ul>
         <li class="year"><?php echo $year; ?></li>
-        <li class="prev">&#10094;</li>
-        <li class="next">&#10095;</li>
+       
         <li class="current-month">
           <?php echo $month_name; ?>
         </li>
-
+<li><?php echo $currentTime; ?></li>
       </ul>
     </div>
 
