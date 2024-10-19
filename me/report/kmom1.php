@@ -19,7 +19,7 @@
     <div class="navbar">
     <?php
                $title = "header";
-               include"../../view/header.php";
+               include"../view/header.php";
                ?>
 
            </div>

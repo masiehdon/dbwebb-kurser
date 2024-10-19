@@ -20,7 +20,7 @@
            <div class="navbar">
                <?php
                $title = "header";
-               include"../../view/header.php";
+               include"../view/header.php";
                ?>
            </div>
 
@@ -30,7 +30,7 @@
        <div class="main-content-report-kmom">
            
        <?php
-                $jsonData = file_get_contents('./reports/kmom2.json');
+                $jsonData = file_get_contents('./reports/kmom3.json');
                 
                 $report = json_decode($jsonData, true);
 

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="<?= $baseUrl ?>css/style.css">
     <link rel="stylesheet" href="<?= $baseUrl ?>css/footer.css">
     <link rel="stylesheet" href="<?= $baseUrl ?>css/friday.css">
-    <title>Document</title>
+    <title>friday</title>
 </head>
 
 <body>
