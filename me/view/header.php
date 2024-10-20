@@ -28,6 +28,8 @@
                 <li><a href="<?= $baseUrl ?>report.php">Reports</a></li>
                 <li><a href="<?= $baseUrl ?>friday.php">Friday</a></li>
                 <li><a href="<?= $baseUrl ?>month.php">Month</a></li>
+                <li><a href="<?= $baseUrl ?>photocal.php">Calendar</a></li>
+                <li><a href="<?= $baseUrl ?>guessGame.php">Guess the Name</a></li>
 
 
             </ul>
