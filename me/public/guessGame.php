@@ -30,25 +30,27 @@ session_start();
         </nav>
 
         <div class="guess-game">
-
-            <!-- Formulär för användarnamn -->
-            <form action="" method="post">
-                <label for="username">Username:</label>
-                <input type="text" id="player_name" name="player_name" required>
-                <input type="submit" name="submit_name" value="Submit">
+<div class="form-area">
+     <!-- Formulär för användarnamn -->
+            <form action="" method="post" class="name-form">
+               
+                <input type="text" id="player_name" name="player_name" placeholder="Enter your name" required>
+                <input type="submit" name="submit_name" value="Submit Name">
 
             </form>
 
-            <form action="" method="post">
-               
-        <input type="submit" name="reset_name" value="Reset">
-        </form>
-            <div class="game-area">
+            <form action="" method="post" class="reset-form">
+
+                <input type="submit" name="reset_name" value="Reset Game">
+            </form>
+            </div>
+
+           <div class="game-area">
                 <?php
                 // Hantera inskick av användarnamn
                 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["submit_name"])) {
                     $_SESSION["player_name"] = $_POST["player_name"];
-                   
+
                 }
                 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["reset_name"])) {
                     unset($_SESSION["player_name"]);
@@ -56,17 +58,32 @@ session_start();
 
                 // Arrays med namn och betydelser
                 $names = [
-                    "Alice", "Bob", "Charlie", "Diana", "Edward",
-                    "Fiona", "George", "Hannah", "Isaac", "Julia"
+                    "Alice",
+                    "Bob",
+                    "Charlie",
+                    "Diana",
+                    "Edward",
+                    "Fiona",
+                    "George",
+                    "Hannah",
+                    "Isaac",
+                    "Julia"
                 ];
                 $meanings = [
-                    "Noble", "Bright Fame", "Free Man", "Divine", 
-                    "Wealthy Guardian", "Fair", "Farmer", "Grace", 
-                    "Laughter", "Youthful"
+                    "Noble",
+                    "Bright Fame",
+                    "Free Man",
+                    "Divine",
+                    "Wealthy Guardian",
+                    "Fair",
+                    "Farmer",
+                    "Grace",
+                    "Laughter",
+                    "Youthful"
                 ];
                 ?>
                 <div class="display-username">
-                    <h3><?php echo $_SESSION["player_name"] ? $_SESSION["player_name"] : "Guest"; ?></h3>
+                    <h3 class="current-user"><?php echo $_SESSION["player_name"] ? $_SESSION["player_name"] : "Guest"; ?></h3>
                 </div>
                 <!-- Formulär för att starta spelet -->
                 <div class="game-start">
@@ -94,9 +111,9 @@ session_start();
                     <!-- Formulär för att gissa namnet -->
                     <div class="name">
                         <form action="" method="post">
-                            <label for="guess">Guess the name: </label>
-                            <input type="text" id="guess" name="guess" required>
-                            <input type="submit" name="submit_guess" value="Guess">
+
+                            <input type="text" id="guess" name="guess" placeholder="Guess the name" required>
+                            <input type="submit" name="submit_guess" value="Check your guess">
                         </form>
                     </div>
 
@@ -105,7 +122,9 @@ session_start();
                 ?>
 
                 <!-- Hantera gissningar -->
-                <?php
+
+                <div class="output">
+                    <?php
                 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["submit_guess"])) {
                     $user_guess = $_POST["guess"];
 
@@ -120,6 +139,8 @@ session_start();
                     }
                 }
                 ?>
+                </div>
+                
 
             </div>
         </div>

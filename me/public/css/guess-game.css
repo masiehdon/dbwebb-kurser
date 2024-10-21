@@ -3,11 +3,10 @@
     height: 100vh;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    margin: 25px;
 }
 
-.guess-game form {
-    margin: 50px;
-}
 
 .game-area {
     width: 50%;
@@ -16,4 +15,58 @@
     text-align: center;
     background-color: #85FFBD;
     margin: 0 auto;
+}
+.form-area form{
+
+    padding: 20px;
+   
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);    
+}
+
+.form-area {
+    width: 50%;
+    text-align: center; 
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.form-area form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#player_name {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.game-start form input[type="submit"] {
+    padding: 10px;
+    margin: 15px;
+}
+.meaning {
+    padding: 20px;
+    margin: 10px;
+}
+
+.name form input {
+    padding: 10px;
+    margin: 10px;
+}
+
+.output {
+    padding: 10px;
+    margin: 10px;
+}
+
+.current-user {
+    padding: 10px;
+    margin: 10px;
 }
