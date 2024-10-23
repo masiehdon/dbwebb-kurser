@@ -6,9 +6,9 @@
     
     <?php include "../../config/config.php" ?>
 
-<link rel="stylesheet" href="<?= $baseUrl ?>css/style.css">
-<link rel="stylesheet" href="<?= $baseUrl ?>css/header.css">
-<link rel="stylesheet" href="<?= $baseUrl ?>css/footer.css">
+<link rel="stylesheet" href="<?= $assetsUrl ?>css/style.css">
+<link rel="stylesheet" href="<?= $assetsUrl ?>css/header.css">
+<link rel="stylesheet" href="<?= $assetsUrl ?>css/footer.css">
 
     <title>Document</title>
 </head>

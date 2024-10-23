@@ -8,8 +8,11 @@
   
   body {
     font-family: Verdana, sans-serif;
+   
   }
-  
+  .container {
+     height: 100vh;
+  }
   
  .month {
     padding: 5px;
@@ -55,8 +58,8 @@
   
   .month ul {
     display: flex;
-    justify-content: space-between;        /* Centrerar månadens namn horisontellt */
-    align-items: center;            /* Centrerar månadens namn vertikalt */
+    justify-content: space-between;        
+    align-items: center;            
     margin: 0;
     padding: 0;
     position: relative;

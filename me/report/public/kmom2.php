@@ -6,9 +6,9 @@
 
     <?php include "../../config/config.php" ?>
 
-<link rel="stylesheet" href="<?= $baseUrl ?>css/style.css">
-<link rel="stylesheet" href="<?= $baseUrl ?>css/header.css">
-<link rel="stylesheet" href="<?= $baseUrl ?>css/footer.css">
+<link rel="stylesheet" href="<?= $assetsUrl ?>css/style.css">
+<link rel="stylesheet" href="<?= $assetsUrl ?>css/header.css">
+<link rel="stylesheet" href="<?= $assetsUrl ?>css/footer.css">
 
 
     <title>Document</title>
@@ -16,20 +16,21 @@
 <body>
     <div class="container">
     <nav>
-    <div class="navbar">
-    <?php
+           
+           <div class="navbar">
+               <?php
                $title = "header";
                include"../view/header.php";
                ?>
-
            </div>
+
        </nav>
 
        <main class="main">
        <div class="main-content-report-kmom">
            
        <?php
-                $jsonData = file_get_contents('./reports/kmom1.json');
+                $jsonData = file_get_contents('./reports/kmom2.json');
                 
                 $report = json_decode($jsonData, true);
 
@@ -38,12 +39,11 @@
                 ?>
        </div>
      </div>
- 
        <footer>
 
             <div class="footer">
-            <?php
-                include"../../view/footer.php";
+                <?php
+                include("../../view/footer.php");
                 ?>
             </div>
         </footer>

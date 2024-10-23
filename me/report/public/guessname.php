@@ -10,10 +10,10 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php include "../../config/config.php" ?>
 
-    <link rel="stylesheet" href="<?= $baseUrl ?>css/style.css">
-    <link rel="stylesheet" href="<?= $baseUrl ?>css/footer.css">
-    <link rel="stylesheet" href="<?= $baseUrl ?>css/month.css">
-    <link rel="stylesheet" href="<?= $baseUrl ?>css/guess-game.css">
+    <link rel="stylesheet" href="<?= $assetsUrl ?>css/style.css">
+    <link rel="stylesheet" href="<?= $assetsUrl ?>css/footer.css">
+    <link rel="stylesheet" href="<?= $assetsUrl ?>css/month.css">
+    <link rel="stylesheet" href="<?= $assetsUrl ?>css/guess-game.css">
     <title>Guess the name</title>
 </head>
 

@@ -6,9 +6,9 @@
 
     <?php include "../../config/config.php" ?>
 
-<link rel="stylesheet" href="<?= $baseUrl ?>css/style.css">
-<link rel="stylesheet" href="<?= $baseUrl ?>css/header.css">
-<link rel="stylesheet" href="<?= $baseUrl ?>css/footer.css">
+<link rel="stylesheet" href="<?= $assetsUrl ?>css/style.css">
+<link rel="stylesheet" href="<?= $assetsUrl ?>css/header.css">
+<link rel="stylesheet" href="<?= $assetsUrl ?>css/footer.css">
 
 
     <title>Document</title>
@@ -30,7 +30,7 @@
        <div class="main-content-report-kmom">
            
        <?php
-                $jsonData = file_get_contents('./reports/kmom3.json');
+                $jsonData = file_get_contents('./reports/kmom4.json');
                 
                 $report = json_decode($jsonData, true);
 

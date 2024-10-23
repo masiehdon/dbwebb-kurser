@@ -33,10 +33,10 @@
 
                 <aside class="aside">
                     <ul>
-                        <li><a href="../report/kmom1.php">Kursmoment 1</a></li>
-                        <li><a href="../report/kmom2.php">Kursmoment 2</a></li>
-                        <li><a href="../report/kmom3.php">Kursmoment 3</a></li>
-                        <li><a href="../report/kmom4.php">Kursmoment 4</a></li>
+                        <li><a href="./kmom1.php">Kursmoment 1</a></li>
+                        <li><a href="./kmom2.php">Kursmoment 2</a></li>
+                        <li><a href="./kmom3.php">Kursmoment 3</a></li>
+                        <li><a href="./kmom4.php">Kursmoment 4</a></li>
                     </ul>
                 </aside>
                 <article class="article">

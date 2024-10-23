@@ -1,0 +1,4 @@
+{
+    "title": "Reflektioner och lärdomar kring kmom04",
+    "report": "Vad jag lärde mig i detta avsnitt var hur jag kan importera bilder och visa dem dynamiskt. Detta var intressant men också något jobbigt eftersom jag bara lyckades att få tillgång till dem via baseurl och inte direkt från html filen. Det är också intressant att se likheter mellan PHP och JS samtidigt som begränsningar som PHP har jämfört med React."
+}
