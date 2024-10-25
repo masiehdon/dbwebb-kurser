@@ -1,9 +1,3 @@
-<?php
-session_start();
-?>
-
-<!DOCTYPE html>
-<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -55,14 +49,6 @@ session_start();
                 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["reset_name"])) {
                     unset($_SESSION["player_name"]);
                 }
-
-
-                $pdo = new PDO('sqlite:your_database_name.db');
-                $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-                
-
-
 
                 // Arrays med namn och betydelser
                 $names = [
