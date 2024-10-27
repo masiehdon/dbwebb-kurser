@@ -31,15 +31,15 @@
     margin-top: 25px;
     margin-bottom: 25px;
 }
-
+/* 
 .form-area form input[type="submit"] {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
-}
+} */
 
-#player_name {
+.form-area form input{
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;

@@ -26,7 +26,7 @@
         <div class="guess-game">
 <div class="form-area">
      <!-- Formulär för användarnamn -->
-            <form action="" method="post" class="name-form">
+            <form action="$_SERVER['PHP_SELF']" method="post" class="name-form">
                
                 <input type="text" id="player_name" name="player_name" placeholder="Enter your name" required>
                 <input type="submit" name="submit_name" value="Submit Name">
@@ -37,45 +37,13 @@
 
                 <input type="submit" name="reset_name" value="Reset Game">
             </form>
+            
             </div>
 
            <div class="game-area">
-                <?php
-                // Hantera inskick av användarnamn
-                if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["submit_name"])) {
-                    $_SESSION["player_name"] = $_POST["player_name"];
 
-                }
-                if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["reset_name"])) {
-                    unset($_SESSION["player_name"]);
-                }
 
-                // Arrays med namn och betydelser
-                $names = [
-                    "Alice",
-                    "Bob",
-                    "Charlie",
-                    "Diana",
-                    "Edward",
-                    "Fiona",
-                    "George",
-                    "Hannah",
-                    "Isaac",
-                    "Julia"
-                ];
-                $meanings = [
-                    "Noble",
-                    "Bright Fame",
-                    "Free Man",
-                    "Divine",
-                    "Wealthy Guardian",
-                    "Fair",
-                    "Farmer",
-                    "Grace",
-                    "Laughter",
-                    "Youthful"
-                ];
-                ?>
+               
                 <div class="display-username">
                     <h3 class="current-user"><?php echo $_SESSION["player_name"] ? $_SESSION["player_name"] : "Guest"; ?></h3>
                 </div>
@@ -89,12 +57,9 @@
                 <!-- Visa spelet endast om "Start the game"-knappen har klickats -->
                 <?php
                 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["start_game"])) {
-                    // Generera ett slumpmässigt namn och betydelse
-                    $random = rand(0, count($names) - 1);
-                    $meaning = $meanings[$random];
+                   
 
-                    // Spara slumpat index i sessionen för att kunna jämföra med gissning senare
-                    $_SESSION['random_index'] = $random;
+                 
 
                     // Visa spelet efter att användaren klickat på "Start the game"
                     echo "<div class='meaning'>";
