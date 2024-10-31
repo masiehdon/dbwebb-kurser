@@ -13,7 +13,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #85FFBD;
+    background-color: #ccd6d1;
     margin: 0 auto;
 }
 .form-area form{
@@ -31,16 +31,9 @@
     margin-top: 25px;
     margin-bottom: 25px;
 }
-/* 
-.form-area form input[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-} */
 
 .form-area form input{
-    width: 100%;
+    width: 50%;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
@@ -61,9 +54,20 @@
     margin: 10px;
 }
 
-.output {
+.search {
     padding: 10px;
     margin: 10px;
+}
+
+.output .guess-result {
+    padding: 10px;
+    margin: 10px;
+    padding-bottom: 25px;
+}
+.search-result {
+    padding: 10px;
+    margin: 10px;
+    padding-bottom: 25px;
 }
 
 .current-user {

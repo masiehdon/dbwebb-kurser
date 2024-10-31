@@ -13,13 +13,17 @@ function setUsername($username) {
     $_SESSION['username'] = htmlspecialchars($username); // Store the sanitized username in the session
 }
 
+
+
 // Function to retrieve the username from the session
 function getUsername() {
     if (!session_id()) {
         session_start();
     }
-    return $_SESSION['username'] ?? 'Guest'; // Return 'Guest' if no username is set
+    return $_SESSION['username'] ?? 'Guest'; 
 }
+
+
 
 // Starting the game
 function startGame() {
@@ -29,7 +33,12 @@ function startGame() {
         try {
             $stmt = $pdo->query("SELECT * FROM names ORDER BY RANDOM() LIMIT 1");
             $result = $stmt->fetch(PDO::FETCH_ASSOC);
-            return $result ?: null; // Return the row or null if no data
+            if ($result) {
+                $_SESSION["name"] = $result['name']; // Store the fetched name in session
+                return $result;
+            } else {
+                return null; // Return null if no data
+            }
         } catch (PDOException $e) {
             echo "Query failed: " . $e->getMessage();
             return null;
@@ -42,3 +51,17 @@ function startGame() {
 }
 
 
+function submit_guess($guess, $name) {
+   
+    if(strtolower($guess) == strtolower($name)){
+       return true;
+    } else {
+       return false;
+    }
+}
+
+// Search for the name of displayed meaning
+
+function searchForName($searchResult) {
+    echo $searchResult;
+}
