@@ -29,7 +29,7 @@
                 <li><a href="<?= $baseUrl ?>friday.php">Friday</a></li>
                 <li><a href="<?= $baseUrl ?>month.php">Month</a></li>
                 <li><a href="<?= $baseUrl ?>photocal.php">Calendar</a></li>
-                <li><a href="<?= $baseUrl ?>guessName.php">Guess Game</a></li>
+                <li><a href="<?= $baseUrl ?>name.php">Guess Game</a></li>
 
 
             </ul>
