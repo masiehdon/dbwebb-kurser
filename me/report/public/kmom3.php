@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="<?= $assetsUrl ?>css/style.css">
 <link rel="stylesheet" href="<?= $assetsUrl ?>css/header.css">
 <link rel="stylesheet" href="<?= $assetsUrl ?>css/footer.css">
+<link rel="stylesheet" href="<?= $assetsUrl ?>css/kmom-reports.css">
 
 
     <title>Document</title>
@@ -26,7 +27,7 @@
 
        </nav>
 
-       <main class="main">
+       <main class="main-kmom-reports">
        <div class="main-content-report-kmom">
            
        <?php
@@ -34,8 +35,8 @@
                 
                 $report = json_decode($jsonData, true);
 
-                echo "<h1>" . $report['title'] . "</h1>";
-                echo "<p>" . $report['report'] . "</p>";
+                echo "<h1 class='report-title'>" . $report['title'] . "</h1>";
+                echo "<p class='report-content'>" . $report['report'] . "</p>";
                 ?>
        </div>
      </div>

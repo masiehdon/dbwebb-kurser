@@ -12,25 +12,27 @@
 <link rel="stylesheet" href="<?= $assetsUrl ?>css/kmom-reports.css">
 
 
-    <title>Document</title>
+
+    <title>Kmom05</title>
 </head>
 <body>
     <div class="container">
     <nav>
-    <div class="navbar">
-    <?php
+           
+           <div class="navbar">
+               <?php
                $title = "header";
                include"../view/header.php";
                ?>
-
            </div>
+
        </nav>
 
        <main class="main-kmom-reports">
        <div class="main-content-report-kmom">
            
        <?php
-                $jsonData = file_get_contents('./reports/kmom1.json');
+                $jsonData = file_get_contents('./reports/kmom5.json');
                 
                 $report = json_decode($jsonData, true);
 
@@ -39,12 +41,11 @@
                 ?>
        </div>
      </div>
- 
        <footer>
 
             <div class="footer">
-            <?php
-                include"../../view/footer.php";
+                <?php
+                include("../../view/footer.php");
                 ?>
             </div>
         </footer>

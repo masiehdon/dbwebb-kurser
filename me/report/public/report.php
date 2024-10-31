@@ -37,6 +37,7 @@
                         <li><a href="./kmom2.php">Kursmoment 2</a></li>
                         <li><a href="./kmom3.php">Kursmoment 3</a></li>
                         <li><a href="./kmom4.php">Kursmoment 4</a></li>
+                        <li><a href="./kmom5.php">Kursmoment 5</a></li>
                     </ul>
                 </aside>
                 <article class="article">

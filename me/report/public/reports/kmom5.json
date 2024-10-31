@@ -1,0 +1,4 @@
+{
+    "title": "Vad jag har lärt mig i kmom5",
+    "report": "I kmom05 har jag jobbat med att sätta upp och använda en databas med SQLite för att hantera namn och deras betydelser. Jag började med att skapa databasen och tabellen för att lagra namn och meningar. Efter det implementerade jag funktioner i PHP för att koppla upp mig till databasen och hämta data med hjälp av PDO. Detta gav mig en bra inblick i hur databaser kan användas tillsammans med PHP och hur man säkerställer att databasanrop sker på ett säkert sätt. Jag har också lärt mig vikten av att använda sessionsvariabler för att spara användarinformation under spelets gång, så att informationen är tillgänglig mellan olika sidladdningar. Jag använde PHP-sessions för att lagra namnet och meningen för att hålla datan tillgänglig även när sidan uppdateras, vilket gjorde det möjligt att bibehålla kontinuiteten i spelet."
+}
