@@ -3,8 +3,8 @@ if ($_SERVER["HTTP_HOST"] == "localhost") {
     $baseUrl = 'http://localhost/dbwebb-kurser/me/report/public/';
     $assetsUrl = 'http://localhost/dbwebb-kurser/me/report/public/';
 } else {
-    $baseUrl = 'https://www.student.bth.se/~maad22/dbwebb-kurser/me/public/';
-    $assetsUrl = 'https://www.student.bth.se/~maad22/dbwebb-kurser/me/';
+    $baseUrl = 'https://www.student.bth.se/~mado22/dbwebb-kurser/me/report/public/';
+    $assetsUrl = 'https://www.student.bth.se/~mado22/dbwebb-kurser/me/report/public/';
 }
 
 // The base directory for the project, useful for including files or resources

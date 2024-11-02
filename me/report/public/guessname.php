@@ -73,8 +73,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["searchName"])) {
 
     <link rel="stylesheet" href="<?= $assetsUrl ?>css/style.css">
     <link rel="stylesheet" href="<?= $assetsUrl ?>css/footer.css">
-    <link rel="stylesheet" href="<?= $assetsUrl ?>css/month.css">
-    <link rel="stylesheet" href="<?= $assetsUrl ?>css/guess-game.css">
+     <link rel="stylesheet" href="<?= $assetsUrl ?>css/guessgame.css">
     <title>Guess the name</title>
 </head>
 
