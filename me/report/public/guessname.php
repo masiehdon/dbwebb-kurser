@@ -1,12 +1,24 @@
-<?php
-session_start(); // Start the session at the beginning
+<?php 
+
+
+// Start the session at the beginning
+session_start(); 
+
+
+include_once '/../config/config.php';
+
+// include_once '/../src/functions.php';
+include_once __DIR__ . '/../src/functions.php';
+
+// include_once __DIR__ . '/../src/functions.php';
+
+
 
 // Enable error reporting
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-// Include the database connection and data-fetching functions
-include_once __DIR__ . '/../src/functions.php';
+
 
 // Handle username submission
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
